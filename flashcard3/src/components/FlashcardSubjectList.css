@@ -1,0 +1,84 @@
+.subject-section {
+  margin-top: 2rem;
+}
+
+.subject-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  color: #ffffff;
+}
+
+.subject-scroll {
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+.subject-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.subject-scroll::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+.subject-card {
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 12px;
+  min-width: 200px;
+  text-align: center;
+  flex-shrink: 0;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.subject-card:hover {
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.25);
+  transform: translateY(-4px);
+}
+
+.subject-card h3 {
+  margin: 0.5rem 0 0.3rem;
+}
+
+.subject-card p {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.progress-ring {
+  margin: 0 auto 0.5rem;
+  width: 80px;
+  height: 80px;
+}
+
+.ring-bg {
+  fill: none;
+  stroke: #2a2a40;
+  stroke-width: 8;
+}
+
+.ring-progress {
+  fill: none;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: stroke-dashoffset 0.8s ease;
+  stroke-width: 8;
+}
+
+.ring-progress.red {
+  stroke: #f87171; /* Soft red */
+}
+
+.ring-progress.yellow {
+  stroke: #facc15; /* Amber */
+}
+
+.ring-progress.green {
+  stroke: #34d399; /* Emerald */
+}

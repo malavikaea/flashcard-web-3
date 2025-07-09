@@ -1,0 +1,179 @@
+.onboarding-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(10, 25, 41, 0.85);
+  backdrop-filter: blur(8px);
+  padding-top: 60px; /* leave space for navbar if needed */
+}
+
+.onboarding-form {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  margin: auto;
+}
+
+
+.fade-in {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.step-counter {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #a0cfff;
+}
+
+.form-group h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.chip-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #4f94d4;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.chip-btn.selected {
+  background-color: #4f94d4;
+  color: #fff;
+}
+
+.level-radio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.level-chip input {
+  display: none;
+}
+
+.level-chip {
+  border: 1px solid #3ea6ff;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+}
+
+.level-chip.selected {
+  background-color: #3ea6ff;
+  color: black;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 0.9rem;
+}
+
+.next-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #1e90ff, #0077cc);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.next-btn:hover {
+  background: linear-gradient(135deg, #3399ff, #005fa3);
+}
+
+.hint {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #b3e5fc;
+}
+
+.progress-bar {
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to right, #3ea6ff, #007acc);
+  margin-bottom: 1rem;
+  transition: width 0.4s ease-in-out;
+}
+
+.fade-in {
+  transition: all 0.3s ease;
+}
+
+.chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: start;
+}
+
+.chip-btn {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid #3ea6ff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #eee;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chip-btn.selected {
+  background-color: #3ea6ff;
+  color: black;
+}
+
+.onboarding-final-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  width: fit-content;
+  max-width: 90%;
+}

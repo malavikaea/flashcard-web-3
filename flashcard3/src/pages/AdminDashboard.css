@@ -1,0 +1,61 @@
+.admin-dashboard {
+  padding: 2rem;
+  color: #e6edf3;
+  background-color: #0d1117;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-dashboard h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #58a6ff;
+}
+
+.admin-dashboard h3 {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.admin-dashboard h4 {
+  margin-top: 2rem;
+  color: #3ea6ff;
+  font-weight: 600;
+}
+
+.user-list {
+  background: #161b22;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 400px;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.user-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #2a2f3a;
+}
+
+.user-list li:last-child {
+  border-bottom: none;
+}
+
+.button-stack {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.button-stack a button {
+  color: #3ea6ff;
+  border-color: #3ea6ff;
+  font-weight: 600;
+}
+
+.button-stack a button:hover {
+  background-color: #3ea6ff;
+  color: #0d1117;
+  transition: 0.3s ease;
+}

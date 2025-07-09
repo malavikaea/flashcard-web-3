@@ -1,0 +1,67 @@
+:root {
+  --bg: #0d1117;
+  --card-bg: #161b22;
+  --text: #e6edf3;
+  --accent: #3b82f6;
+  --muted: #8b949e;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard-main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.dashboard-header {
+  margin-top: 80px; /* to push it below navbar */
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+.welcome-msg {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.quote {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+/* Subject cards in horizontal scrollable row */
+.subject-row-wrapper {
+  margin-top: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.subject-row-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.subject-row-wrapper::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 10px;
+}
+
+.subject-row-wrapper > * {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}

@@ -1,0 +1,27 @@
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  max-width: 280px;
+}
+
+.heatmap-cell {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #1f2937;
+  transition: background-color 0.3s ease;
+}
+
+.level-0 {
+  background-color: #2d3748;
+}
+.level-1 {
+  background-color: #2563eb33;
+}
+.level-2 {
+  background-color: #2563eb66;
+}
+.level-3 {
+  background-color: #2563eb;
+}

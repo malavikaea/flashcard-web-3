@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #100f0f, #0b3538);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem 3rem;
+  width: 350px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.login-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-box p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.oauth-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+  margin: 0 auto 1rem auto; 
+  width: 100%;
+  max-width: 280px; 
+}
+
+.oauth-btn img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.oauth-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.divider {
+  margin: 1.5rem 0;
+  font-size: 0.8rem;
+  color: #888;
+  position: relative;
+}
+.divider::before,
+.divider::after {
+  content: '';
+  height: 1px;
+  width: 40%;
+  background: #333;
+  position: absolute;
+  top: 50%;
+}
+.divider::before {
+  left: 0;
+}
+.divider::after {
+  right: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.sign-in-btn {
+  background-color: #3ea6ff;
+  color: black;
+  font-weight: bold;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sign-in-btn:hover {
+  background-color: #66c6ff;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.options a {
+  text-decoration: none;
+  color: #3ea6ff;
+}
+
+.signup-link {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.signup-link a {
+  color: #3ea6ff;
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

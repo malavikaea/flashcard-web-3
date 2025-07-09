@@ -1,0 +1,58 @@
+.sidebar {
+  width: 240px;
+  background-color: var(--card-bg);
+  color: var(--text);
+  padding: 1.5rem;
+  border-right: 1px solid #2a2a40;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--accent);
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  margin-bottom: 1rem;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  text-align: left;
+  width: 100%;
+}
+
+.menu-btn:hover {
+  color: var(--accent);
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.submenu-item {
+  padding: 0.3rem 0;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.submenu-item:hover {
+  color: var(--accent);
+}
