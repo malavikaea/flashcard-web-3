@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const key = process.env.GEMINI_API_KEY;
 console.log("yeah");
-axios.get(`https://generativelanguage.googleapis.com/v1/models?key=AIzaSyAsSFJgg15pC5QuNlKbLqnzuwiqYbHqXyE`)
+axios.get(`https://generativelanguage.googleapis.com/v1/models?key`)
   .then(res => {
     console.log("Available Models:");
     res.data.models.forEach(model => console.log(model.name));
